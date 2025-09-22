@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 const n = 6;
 for (let i = 1; i < n; i++) {
   let row = " ";
@@ -126,15 +124,6 @@ function studentMsg(totalScores, studentScore) {
   }
 }
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
-
-const [data, setData] = useState(null);
-
-async function getData() {
-  fetch("https://jsonplaceholder.typicode.com/todos/1")
-    .then((response) => response.json())
-    .then((json) => setData(json));
-}
-
-getData();
-
-console.log(data);
+remainingCalories = -350;
+const surplusOrDeficit = remainingCalories > 0 ? "surplus" : "deficit";
+console.log(surplusOrDeficit);
