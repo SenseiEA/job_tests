@@ -127,3 +127,21 @@ console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
 remainingCalories = -350;
 const surplusOrDeficit = remainingCalories > 0 ? "surplus" : "deficit";
 console.log(surplusOrDeficit);
+
+function randomResult() {
+  const options = ["rock", "paper", "scissors"];
+  const randomIndex = Math.floor(Math.random() * options.length);
+}
+
+function greetuser(user, callback) {
+  console.log(`Hello, ${user}!`);
+  setTimeout(() => {
+    callback();
+  }, 2000);
+}
+
+function askQuestion() {
+  console.log("How are you today?");
+}
+
+greetuser("Alice", askQuestion);
